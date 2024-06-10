@@ -1,0 +1,343 @@
+body {
+    background: url('./pics/WhatsApp Image 2024-05-18 at 12.29.01 PM.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 254, 240);
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar {
+    color: white;
+    z-index: 1000;
+}
+.full-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0 20px;
+}
+.full-screen .text-section {
+    color: rgb(255, 254, 240);
+    width: 50%;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.full-screen .image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.full-screen .image-section img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+#about, #projects, #contact {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(141, 127, 127);
+}
+.text-white {
+    color: #fff !important;
+}
+.dark-mode {
+    color: #ffffff;
+}
+.dark-mode .navbar, .dark-mode .bg-light {
+    color: #ffffff;
+}
+.dark-mode .navbar-light .navbar-brand, .dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.dark-mode .bg-light {
+    color: #ffffff;
+}
+footer {
+    margin-top: 50px;
+}
+#darkModeToggle i {
+    margin-right: 5px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* About Section Styles */
+#about {
+
+/* background-color: rgba(0, 0, 0, 0.8); */
+padding: 60px 20px;
+color: #fff;
+text-align: left;
+}
+
+#about h2 {
+font-size: 36px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+#about h3 {
+font-size: 28px;
+margin-bottom: 15px;
+}
+
+#about .intro {
+font-size: 18px;
+margin-bottom: 30px;
+text-align: center;
+}
+
+#about .details {
+
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+#about .education-content {
+
+margin-top: 100px; /* Add margin to move it downwards */
+
+/* background-color: rgba(255, 255, 255, 0.1); */
+padding: 20px;
+border-radius: 10px;
+color: #fff;
+}
+
+#about .education-content h3 {
+font-size: 28px;
+margin-bottom: 20px;
+
+}
+
+#about .education-list {
+list-style-type: none;
+padding: 0;
+}
+
+#about .education-list li {
+margin-bottom: 20px;
+}
+
+#about .education-list h4 {
+font-size: 20px;
+margin-bottom: 5px;
+}
+
+#about .education-list p {
+font-size: 16px;
+margin: 0;
+}
+
+/* Skills Section Styles */
+.skills {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
+}
+
+.skill-bubble {
+background-color: #646566;
+color: #fff;
+border-radius: 50%;
+padding: 15px 25px;
+margin: 10px;
+font-size: 14px;
+font-weight: bold;
+text-transform: uppercase;
+transition: transform 0.3s;
+}
+
+.skill-bubble:hover {
+transform: scale(1.1);
+}
+
+/* Adding subtle animation */
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+#about .about-content, #about .education-content {
+animation: fadeInUp 1s ease-in-out;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+    font-size: 25px;
+}
+.navbar .navbar-nav .nav-item:nth-child(1),
+.navbar .navbar-nav .nav-item:nth-child(2),
+.navbar .navbar-nav .nav-item:nth-child(3) {
+    margin-left: 25px;
+    margin-right: 24px;
+}
+.navbar .navbar-brand {
+    font-size: 34px;
+    margin-left: 150px;
+}
+.btn-download {
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.btn-download:hover {
+    transform: scale(1.1);
+    background-color: #1c1d1e;
+    color: white;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+.project-card-body {
+    padding: 20px;
+}
+.project-card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project-card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.btn-view-live {
+    background-color: #00c6ff;
+    color: #fff;
+}
+
+.project-card img {
+width: 100%;
+height: 200px; /* Set a fixed height for the images */
+object-fit: cover; /* Ensure the images maintain their aspect ratio */
+}
+/* Contact Section Styles */
+#contact {
+/* background-color: rgba(0, 0, 0, 0.8); Semi-transparent background */
+padding: 60px 20px;
+color: #fff;
+text-align: center;
+}
+
+#contact h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+#contact p {
+font-size: 18px;
+margin-bottom: 40px;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 80%;
+max-width: 600px;
+padding: 15px;
+margin: 10px 0;
+border: 2px solid #fff;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.1);
+color: #fff;
+font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+outline: none;
+border-color: #00c6ff;
+}
+
+.contact-form textarea {
+resize: vertical;
+}
+
+.btn-submit {
+color: white;
+background-color: transparent;
+border-radius: 20px;
+font-size: 16px;
+padding: 10px 20px;
+border: 2px solid #fff;
+transition: all 0.3s ease;
+margin-top: 20px;
+}
+
+.btn-submit:hover {
+transform: scale(1.1);
+background-color: #1c1d1e;
+color: white;
+}
+
+
+#projects h2 {
+color: white; /* Set the color to white */
+}
+
